@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0850D7226840C1D41831BA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED141095FFB366EE877D204 /* Assets.xcassets */; };
+		142E11BDFA2DA7F36E77CB5A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E05CAF8722D66A40F8127FB /* AboutView.swift */; };
+		15EF1C71474961820C37347A /* BroadcastCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08376ECA11E43AC2F2A5CF1C /* BroadcastCardView.swift */; };
+		19EB2D9EED598AAC160B2ECE /* AudioCreditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1472F2A638EF558E5D15787D /* AudioCreditView.swift */; };
+		1BA3EA70DA6223287F57FD2E /* ChannelCardButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E1D3AF3410B19143A2D859 /* ChannelCardButtonStyle.swift */; };
+		2095533668B163666BA2577C /* PlaybackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E22AADDF47799FB3825C20 /* PlaybackModel.swift */; };
+		2111B7C2A426612D90C6EC02 /* GuideHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065AB40FB1C88AA205A173E9 /* GuideHeader.swift */; };
+		228CAAAD81DFABA5A0CF5694 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEDC812E06C7B89BCADC198 /* GuideView.swift */; };
+		2B3A9EDE5FBEF0A53B8A3724 /* BroadcastAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1BEA06769FA78607B71AA9 /* BroadcastAudioPlayer.swift */; };
+		2F9DA7C4CC29525DA94BF86C /* ChannelViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509F05CF11DF349798114DC /* ChannelViewData.swift */; };
+		32A1F2FF610F76BDBDA30997 /* ProgramViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15483551358199A0FC5CAB /* ProgramViewData.swift */; };
+		48B43CF057D2667C78749D92 /* LiveProgramProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4C4652167BD887EE114BA0 /* LiveProgramProgress.swift */; };
+		49BDBEE4EF7685B9E8079E31 /* GuideButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A1E2F22E114C531A47A7F2 /* GuideButtonStyle.swift */; };
+		5090CE9C14A3909CE9CDD769 /* SpelunkrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AC5B62C6EF902AF4D24D67 /* SpelunkrApp.swift */; };
+		57EE03CD0987DED3B8908036 /* PlaybackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59525CADFE0701C4EBF09DF /* PlaybackView.swift */; };
+		5891853EF8D53DEAE52FBA2D /* PlaybackChannelControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7FC1E005DE78674468CCD4 /* PlaybackChannelControls.swift */; };
+		6864332F9479A2C64159B635 /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0EA76CD5D16EDFDD102A1E /* FavoritesStore.swift */; };
+		70B778AA9C68927F2F6CD361 /* BroadcastArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA1E17F592DBC842E8F0977 /* BroadcastArtwork.swift */; };
+		70CE56CA9A292144E96C6D1A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970BD8718746ACF0525C64CD /* RootView.swift */; };
+		86B23BC72899C45AAD6DA303 /* SpelunkrTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E3036B36BEF66249B94DD9 /* SpelunkrTheme.swift */; };
+		8C62462A93ACD5C3214C65A1 /* BroadcastBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53D582688EFB05317581E8F /* BroadcastBackdrop.swift */; };
+		90FE119E4D5D694C6A623041 /* GuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50313AD1E7C2EB8023DA05F7 /* GuideModel.swift */; };
+		9A7D858E80D92F40D909E687 /* GuideFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FADEBA6CB0088980479552D /* GuideFooter.swift */; };
+		9D8861BC2EA0C163FADAAB63 /* ChannelSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0618670C06B98C50D6F8FB /* ChannelSearchView.swift */; };
+		A66A939E58725EE12B276091 /* SpelunkrCore in Frameworks */ = {isa = PBXBuildFile; productRef = C606A2C9ED86F269FF491E4A /* SpelunkrCore */; };
+		AE63A5E3DAA75888117FB9AE /* NativePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CABA62CF24A2EFAB63075BA /* NativePlayerView.swift */; };
+		AF3789B91A0FA60F3599392A /* FeaturedChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8C5DA1D835C852A02B5CC /* FeaturedChannelView.swift */; };
+		B399935CC27035865A362C4E /* PlaybackRecoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240D901E3EFB468EC3600F6 /* PlaybackRecoveryView.swift */; };
+		BA77D7408E4FE3D89B385F02 /* CategoryFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C1E89232062B8B5753797F /* CategoryFilterView.swift */; };
+		C16A9F573FCD2B6FECA2E14F /* SpelunkrTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF04785C0F91578370F222C /* SpelunkrTVUITests.swift */; };
+		DC9301C31DB2F30A4F670B2A /* GuideSectionHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F809D30FFBF1AE62421873E4 /* GuideSectionHeading.swift */; };
+		E145FD43AE36B319960840AD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3F462365570BEBDF30D0D82B /* PrivacyInfo.xcprivacy */; };
+		E35FB82D83F632F70EE26853 /* GuideLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34CFEEA46072A12052DACCA /* GuideLoadingView.swift */; };
+		F628F23DE5C7C1449610F718 /* ChannelCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED670385607891F045ACF7D9 /* ChannelCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77AFC9D2713B89BB233C97B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47559471B330C1E8E1941E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F120076BFAEDFF47E922D43;
+			remoteInfo = SpelunkrTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02AC5B62C6EF902AF4D24D67 /* SpelunkrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpelunkrApp.swift; sourceTree = "<group>"; };
+		065AB40FB1C88AA205A173E9 /* GuideHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeader.swift; sourceTree = "<group>"; };
+		08376ECA11E43AC2F2A5CF1C /* BroadcastCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastCardView.swift; sourceTree = "<group>"; };
+		1472F2A638EF558E5D15787D /* AudioCreditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCreditView.swift; sourceTree = "<group>"; };
+		1FA1E17F592DBC842E8F0977 /* BroadcastArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastArtwork.swift; sourceTree = "<group>"; };
+		34E22AADDF47799FB3825C20 /* PlaybackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackModel.swift; sourceTree = "<group>"; };
+		3CF04785C0F91578370F222C /* SpelunkrTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpelunkrTVUITests.swift; sourceTree = "<group>"; };
+		3ED141095FFB366EE877D204 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F462365570BEBDF30D0D82B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4BE8C5DA1D835C852A02B5CC /* FeaturedChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedChannelView.swift; sourceTree = "<group>"; };
+		4CABA62CF24A2EFAB63075BA /* NativePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePlayerView.swift; sourceTree = "<group>"; };
+		50313AD1E7C2EB8023DA05F7 /* GuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideModel.swift; sourceTree = "<group>"; };
+		51E3036B36BEF66249B94DD9 /* SpelunkrTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpelunkrTheme.swift; sourceTree = "<group>"; };
+		5E05CAF8722D66A40F8127FB /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		64E1D3AF3410B19143A2D859 /* ChannelCardButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCardButtonStyle.swift; sourceTree = "<group>"; };
+		7533501013266896978D3850 /* SpelunkrTVUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpelunkrTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A1E2F22E114C531A47A7F2 /* GuideButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideButtonStyle.swift; sourceTree = "<group>"; };
+		7F1BEA06769FA78607B71AA9 /* BroadcastAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastAudioPlayer.swift; sourceTree = "<group>"; };
+		7FADEBA6CB0088980479552D /* GuideFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideFooter.swift; sourceTree = "<group>"; };
+		8F4C4652167BD887EE114BA0 /* LiveProgramProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveProgramProgress.swift; sourceTree = "<group>"; };
+		9509F05CF11DF349798114DC /* ChannelViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewData.swift; sourceTree = "<group>"; };
+		970BD8718746ACF0525C64CD /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A35396FE6B17B304AEFB9E9A /* splunker.tv */ = {isa = PBXFileReference; lastKnownFileType = folder; name = splunker.tv; path = .; sourceTree = SOURCE_ROOT; };
+		AD7FC1E005DE78674468CCD4 /* PlaybackChannelControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackChannelControls.swift; sourceTree = "<group>"; };
+		B1C4EB23132A523B647FD7C0 /* SpelunkrTV.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SpelunkrTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B240D901E3EFB468EC3600F6 /* PlaybackRecoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackRecoveryView.swift; sourceTree = "<group>"; };
+		B34CFEEA46072A12052DACCA /* GuideLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideLoadingView.swift; sourceTree = "<group>"; };
+		B3C1E89232062B8B5753797F /* CategoryFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterView.swift; sourceTree = "<group>"; };
+		BE0EA76CD5D16EDFDD102A1E /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
+		E59525CADFE0701C4EBF09DF /* PlaybackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackView.swift; sourceTree = "<group>"; };
+		EBEDC812E06C7B89BCADC198 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		ED670385607891F045ACF7D9 /* ChannelCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCardView.swift; sourceTree = "<group>"; };
+		EF15483551358199A0FC5CAB /* ProgramViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewData.swift; sourceTree = "<group>"; };
+		F53D582688EFB05317581E8F /* BroadcastBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastBackdrop.swift; sourceTree = "<group>"; };
+		F809D30FFBF1AE62421873E4 /* GuideSectionHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSectionHeading.swift; sourceTree = "<group>"; };
+		FB0618670C06B98C50D6F8FB /* ChannelSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSearchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18418830F9DE08839CD4DF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66A939E58725EE12B276091 /* SpelunkrCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A2D9DD8F0DC498242D0C98B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A35396FE6B17B304AEFB9E9A /* splunker.tv */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		256CF2AB98AF465C14D6443E /* Playback */ = {
+			isa = PBXGroup;
+			children = (
+				1472F2A638EF558E5D15787D /* AudioCreditView.swift */,
+				7F1BEA06769FA78607B71AA9 /* BroadcastAudioPlayer.swift */,
+				08376ECA11E43AC2F2A5CF1C /* BroadcastCardView.swift */,
+				4CABA62CF24A2EFAB63075BA /* NativePlayerView.swift */,
+				AD7FC1E005DE78674468CCD4 /* PlaybackChannelControls.swift */,
+				34E22AADDF47799FB3825C20 /* PlaybackModel.swift */,
+				B240D901E3EFB468EC3600F6 /* PlaybackRecoveryView.swift */,
+				E59525CADFE0701C4EBF09DF /* PlaybackView.swift */,
+			);
+			path = Playback;
+			sourceTree = "<group>";
+		};
+		37C9EA7D5B7A2DA9EED9F340 = {
+			isa = PBXGroup;
+			children = (
+				1A2D9DD8F0DC498242D0C98B /* Packages */,
+				67305A2EA316C5751EEFE3D2 /* SpelunkrTV */,
+				7EDFF391A2837762C601650A /* UITests */,
+				A8675AF4EF3DDEF5852083FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6F42D7163106D503FA1678 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				1FA1E17F592DBC842E8F0977 /* BroadcastArtwork.swift */,
+				F53D582688EFB05317581E8F /* BroadcastBackdrop.swift */,
+				64E1D3AF3410B19143A2D859 /* ChannelCardButtonStyle.swift */,
+				75A1E2F22E114C531A47A7F2 /* GuideButtonStyle.swift */,
+				51E3036B36BEF66249B94DD9 /* SpelunkrTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		6104AD091A9A73B7FA8F14A2 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				5E05CAF8722D66A40F8127FB /* AboutView.swift */,
+				B3C1E89232062B8B5753797F /* CategoryFilterView.swift */,
+				ED670385607891F045ACF7D9 /* ChannelCardView.swift */,
+				FB0618670C06B98C50D6F8FB /* ChannelSearchView.swift */,
+				4BE8C5DA1D835C852A02B5CC /* FeaturedChannelView.swift */,
+				7FADEBA6CB0088980479552D /* GuideFooter.swift */,
+				065AB40FB1C88AA205A173E9 /* GuideHeader.swift */,
+				B34CFEEA46072A12052DACCA /* GuideLoadingView.swift */,
+				F809D30FFBF1AE62421873E4 /* GuideSectionHeading.swift */,
+				EBEDC812E06C7B89BCADC198 /* GuideView.swift */,
+				8F4C4652167BD887EE114BA0 /* LiveProgramProgress.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		67305A2EA316C5751EEFE3D2 /* SpelunkrTV */ = {
+			isa = PBXGroup;
+			children = (
+				BF5F70189890844BA3B23EC6 /* App */,
+				3D6F42D7163106D503FA1678 /* Design */,
+				6104AD091A9A73B7FA8F14A2 /* Guide */,
+				256CF2AB98AF465C14D6443E /* Playback */,
+				81F66416CB276793F8803E2C /* Presentation */,
+				BA8D7480BC5BCC2561FBCF5C /* Resources */,
+			);
+			path = SpelunkrTV;
+			sourceTree = "<group>";
+		};
+		7EDFF391A2837762C601650A /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CF04785C0F91578370F222C /* SpelunkrTVUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		81F66416CB276793F8803E2C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9509F05CF11DF349798114DC /* ChannelViewData.swift */,
+				EF15483551358199A0FC5CAB /* ProgramViewData.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A8675AF4EF3DDEF5852083FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4EB23132A523B647FD7C0 /* SpelunkrTV.app */,
+				7533501013266896978D3850 /* SpelunkrTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA8D7480BC5BCC2561FBCF5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3ED141095FFB366EE877D204 /* Assets.xcassets */,
+				3F462365570BEBDF30D0D82B /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF5F70189890844BA3B23EC6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BE0EA76CD5D16EDFDD102A1E /* FavoritesStore.swift */,
+				50313AD1E7C2EB8023DA05F7 /* GuideModel.swift */,
+				970BD8718746ACF0525C64CD /* RootView.swift */,
+				02AC5B62C6EF902AF4D24D67 /* SpelunkrApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DDC8F6E16EE89D1D723656F /* SpelunkrTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59964F35DDA1C5A22F599F0F /* Build configuration list for PBXNativeTarget "SpelunkrTVUITests" */;
+			buildPhases = (
+				42C145AC7FFC65FF2FB2DED2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A717382F97DD499C84065D /* PBXTargetDependency */,
+			);
+			name = SpelunkrTVUITests;
+			productName = SpelunkrTVUITests;
+			productReference = 7533501013266896978D3850 /* SpelunkrTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3F120076BFAEDFF47E922D43 /* SpelunkrTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B19B3F202855A07BDDAFBD0 /* Build configuration list for PBXNativeTarget "SpelunkrTV" */;
+			buildPhases = (
+				D25433FD87CF4EA98BCE830F /* Sources */,
+				D702DABA8B73673BAF4BF5F7 /* Resources */,
+				18418830F9DE08839CD4DF2E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpelunkrTV;
+			packageProductDependencies = (
+				C606A2C9ED86F269FF491E4A /* SpelunkrCore */,
+			);
+			productName = SpelunkrTV;
+			productReference = B1C4EB23132A523B647FD7C0 /* SpelunkrTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E47559471B330C1E8E1941E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					1DDC8F6E16EE89D1D723656F = {
+						DevelopmentTeam = THSJJN6KNN;
+						TestTargetID = 3F120076BFAEDFF47E922D43;
+					};
+					3F120076BFAEDFF47E922D43 = {
+						DevelopmentTeam = THSJJN6KNN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AF755F602242E0FE3EEB2C08 /* Build configuration list for PBXProject "SpelunkrTV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 37C9EA7D5B7A2DA9EED9F340;
+			packageReferences = (
+				A0B36242E66CCF977537E668 /* XCLocalSwiftPackageReference "." */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F120076BFAEDFF47E922D43 /* SpelunkrTV */,
+				1DDC8F6E16EE89D1D723656F /* SpelunkrTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D702DABA8B73673BAF4BF5F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0850D7226840C1D41831BA84 /* Assets.xcassets in Resources */,
+				E145FD43AE36B319960840AD /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42C145AC7FFC65FF2FB2DED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16A9F573FCD2B6FECA2E14F /* SpelunkrTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D25433FD87CF4EA98BCE830F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142E11BDFA2DA7F36E77CB5A /* AboutView.swift in Sources */,
+				19EB2D9EED598AAC160B2ECE /* AudioCreditView.swift in Sources */,
+				70B778AA9C68927F2F6CD361 /* BroadcastArtwork.swift in Sources */,
+				2B3A9EDE5FBEF0A53B8A3724 /* BroadcastAudioPlayer.swift in Sources */,
+				8C62462A93ACD5C3214C65A1 /* BroadcastBackdrop.swift in Sources */,
+				15EF1C71474961820C37347A /* BroadcastCardView.swift in Sources */,
+				BA77D7408E4FE3D89B385F02 /* CategoryFilterView.swift in Sources */,
+				1BA3EA70DA6223287F57FD2E /* ChannelCardButtonStyle.swift in Sources */,
+				F628F23DE5C7C1449610F718 /* ChannelCardView.swift in Sources */,
+				9D8861BC2EA0C163FADAAB63 /* ChannelSearchView.swift in Sources */,
+				2F9DA7C4CC29525DA94BF86C /* ChannelViewData.swift in Sources */,
+				6864332F9479A2C64159B635 /* FavoritesStore.swift in Sources */,
+				AF3789B91A0FA60F3599392A /* FeaturedChannelView.swift in Sources */,
+				49BDBEE4EF7685B9E8079E31 /* GuideButtonStyle.swift in Sources */,
+				9A7D858E80D92F40D909E687 /* GuideFooter.swift in Sources */,
+				2111B7C2A426612D90C6EC02 /* GuideHeader.swift in Sources */,
+				E35FB82D83F632F70EE26853 /* GuideLoadingView.swift in Sources */,
+				90FE119E4D5D694C6A623041 /* GuideModel.swift in Sources */,
+				DC9301C31DB2F30A4F670B2A /* GuideSectionHeading.swift in Sources */,
+				228CAAAD81DFABA5A0CF5694 /* GuideView.swift in Sources */,
+				48B43CF057D2667C78749D92 /* LiveProgramProgress.swift in Sources */,
+				AE63A5E3DAA75888117FB9AE /* NativePlayerView.swift in Sources */,
+				5891853EF8D53DEAE52FBA2D /* PlaybackChannelControls.swift in Sources */,
+				2095533668B163666BA2577C /* PlaybackModel.swift in Sources */,
+				B399935CC27035865A362C4E /* PlaybackRecoveryView.swift in Sources */,
+				57EE03CD0987DED3B8908036 /* PlaybackView.swift in Sources */,
+				32A1F2FF610F76BDBDA30997 /* ProgramViewData.swift in Sources */,
+				70CE56CA9A292144E96C6D1A /* RootView.swift in Sources */,
+				5090CE9C14A3909CE9CDD769 /* SpelunkrApp.swift in Sources */,
+				86B23BC72899C45AAD6DA303 /* SpelunkrTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3A717382F97DD499C84065D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F120076BFAEDFF47E922D43 /* SpelunkrTV */;
+			targetProxy = 77AFC9D2713B89BB233C97B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		426FF647F7B339609A034DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = THSJJN6KNN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Debug;
+		};
+		65FEEB00973F8CE6AE8A3C04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.fragmede.SpelunkrTVUITests;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = SpelunkrTV;
+			};
+			name = Debug;
+		};
+		885AB3A9FD8B7E93B639CBDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Spelunkr;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.fragmede.SpelunkrTV;
+				PRODUCT_NAME = Spelunkr;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		A341EA223FACB8CDB3E4D65B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.fragmede.SpelunkrTVUITests;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = SpelunkrTV;
+			};
+			name = Release;
+		};
+		A56D870045014E228C260A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Spelunkr;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.fragmede.SpelunkrTV;
+				PRODUCT_NAME = Spelunkr;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		F20A0323013602743365C7F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = THSJJN6KNN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59964F35DDA1C5A22F599F0F /* Build configuration list for PBXNativeTarget "SpelunkrTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FEEB00973F8CE6AE8A3C04 /* Debug */,
+				A341EA223FACB8CDB3E4D65B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B19B3F202855A07BDDAFBD0 /* Build configuration list for PBXNativeTarget "SpelunkrTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A56D870045014E228C260A31 /* Debug */,
+				885AB3A9FD8B7E93B639CBDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AF755F602242E0FE3EEB2C08 /* Build configuration list for PBXProject "SpelunkrTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426FF647F7B339609A034DC4 /* Debug */,
+				F20A0323013602743365C7F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A0B36242E66CCF977537E668 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C606A2C9ED86F269FF491E4A /* SpelunkrCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpelunkrCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E47559471B330C1E8E1941E0 /* Project object */;
+}
