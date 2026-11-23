@@ -73,6 +73,14 @@ Installation review: the signed archive is valid, the app is installed on the pa
 
 - [x] Audit tracked files and history for private setup details and third-party material.
 - [x] Add GPL-3.0-or-later licensing with a clear source/content boundary.
-- [ ] Prepare a public source snapshot while preserving local development history and existing working changes.
-- [ ] Create the public GitHub repository, push the source, and verify the remote commit and recognized license.
-- [ ] Record the publication result and commit the completed notes.
+- [x] Prepare a public source snapshot while preserving local development history and existing working changes.
+- [x] Create the public GitHub repository, push the source, and verify the remote commit and recognized license.
+- [x] Record the publication result and commit the completed notes.
+
+Publication review:
+
+- Published [fragmede/spelunkr-tv](https://github.com/fragmede/spelunkr-tv) as a public repository on `main`.
+- Added the unmodified GNU GPL version 3 text from the Free Software Foundation and an explicit GPL-3.0-or-later grant in the README. GitHub's license endpoint recognizes GNU GPL v3.0. The grant covers this client's source and original assets; existing third-party attribution and screenshot-artwork exclusions are retained.
+- Audited all tracked files and the original four commits: no signing keys, credentials, device UDIDs, or private filesystem paths were tracked. Removed Apple login addresses and personal device names from the published notes. The public initial commit uses the author's GitHub noreply address.
+- Preserved original development history on the local-only `local/pre-github-publication-2026-11-23` branch. Published a clean initial commit, `affc7b1bafe3b1194b40f4499d4a4d418295487d`, and verified that the remote has only `main`. The pre-existing uncommitted Xcode scheme remains untouched.
+- The published source tree matches the prepared local tree. The LICENSE matches the canonical downloaded text, the remote commit matches the pushed commit, and `git diff --check` passes. Application code did not change, so the prior build, automated-test, and device-launch evidence applies.
