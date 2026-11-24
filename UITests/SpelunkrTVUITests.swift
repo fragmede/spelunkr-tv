@@ -2,6 +2,32 @@ import XCTest
 
 @MainActor
 final class SpelunkrTVUITests: XCTestCase {
+    func testRemoteCanReadPrivacyPolicyAndReturnToGuide() {
+        continueAfterFailure = false
+        let app = XCUIApplication()
+        app.launch()
+        XCTAssertTrue(app.buttons["watch-live"].waitForExistence(timeout: 60))
+
+        let remote = XCUIRemote.shared
+        XCTAssertTrue(app.buttons["live-guide-tab"].hasFocus)
+        for _ in 0..<3 { remote.press(.right) }
+        XCTAssertTrue(app.buttons["About"].hasFocus)
+        remote.press(.select)
+
+        let privacy = app.buttons["Privacy Policy"]
+        XCTAssertTrue(privacy.waitForExistence(timeout: 5))
+        if !privacy.hasFocus { remote.press(.left) }
+        XCTAssertTrue(privacy.hasFocus)
+        remote.press(.select)
+        XCTAssertTrue(app.staticTexts["Privacy Policy"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["Back to About"].hasFocus)
+
+        remote.press(.menu)
+        XCTAssertTrue(privacy.waitForExistence(timeout: 5))
+        remote.press(.menu)
+        XCTAssertTrue(app.buttons["watch-live"].waitForExistence(timeout: 5))
+    }
+
     func testFavoriteSurvivesRelaunch() {
         continueAfterFailure = false
         let app = XCUIApplication()

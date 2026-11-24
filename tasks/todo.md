@@ -84,3 +84,23 @@ Publication review:
 - Audited all tracked files and the original four commits: no signing keys, credentials, device UDIDs, or private filesystem paths were tracked. Removed Apple login addresses and personal device names from the published notes. The public initial commit uses the author's GitHub noreply address.
 - Preserved original development history on the local-only `local/pre-github-publication-2026-11-23` branch. Published a clean initial commit, `affc7b1bafe3b1194b40f4499d4a4d418295487d`, and verified that the remote has only `main`. The pre-existing uncommitted Xcode scheme remains untouched.
 - The published source tree matches the prepared local tree. The LICENSE matches the canonical downloaded text, the remote commit matches the pushed commit, and `git diff --check` passes. Application code did not change, so the prior build, automated-test, and device-launch evidence applies.
+
+## App Store preparation and submission — November 23, 2026
+
+Prepare a free tvOS release under OnePatchDown, LLC with manual release after review. Keep the public source GPL-3.0-or-later. Fill Apple declarations from verified behavior and user-provided facts; leave unanswered ownership, content-rating, or legal declarations for the user rather than asserting them.
+
+- [x] Add an offline-readable privacy policy in the app and prepare matching privacy/support documents.
+- [x] Prepare listing text, a 1920 × 1080 guide screenshot, and review instructions.
+- [x] Register an explicit bundle identifier and provision it for App Store distribution under the company team.
+- [ ] Create the tvOS App Store Connect record under the company team.
+- [ ] Verify the privacy flow and release build, then archive and upload a new build.
+- [ ] Complete the store listing, pricing, availability, review details, and manual-release setting.
+- [ ] Submit for review when required declarations are confirmed, or record the exact remaining inputs.
+- [ ] Commit and push implementation and verified submission results.
+
+Preparation review:
+
+- The guide's About sheet opens an offline privacy policy. Simulator tests passed for that flow, search navigation, and favorite persistence. The public privacy and support documents accompany the listing draft.
+- Apple rejected `org.fragmede.SpelunkrTV` as unavailable to the company for explicit registration. Xcode registered `net.onepatchdown.spelunkrtv` and obtained a tvOS App Store profile for team `THSJJN6KNN`. The new identifier installs separately from the original development build.
+- Archived version 1.0.0, build 1 using Xcode 26.3 and the tvOS 26.2 SDK. The archive's development signature and embedded privacy manifest validated. App Store export is waiting for macOS to authorize access to the Apple Distribution key.
+- App Store Connect requires a signed-in company session to create the app record. Content-rights and territory declarations, age rating, reviewer contact, and the App Store binary's distribution terms still need to be resolved before submission.

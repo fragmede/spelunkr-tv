@@ -26,7 +26,7 @@ targets:
       - package: SpelunkrCore
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: org.fragmede.SpelunkrTV
+        PRODUCT_BUNDLE_IDENTIFIER: net.onepatchdown.spelunkrtv
         PRODUCT_NAME: Spelunkr
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Spelunkr

@@ -42,7 +42,9 @@ DEVELOPER_DIR=/Applications/Xcode_26.3.app/Contents/Developer xcodebuild \
 
 ## Signing and distribution
 
-The XcodeGen source and checked-in project select OnePatchDown, LLC (`THSJJN6KNN`) for automatic signing. The bundle identifier is `org.fragmede.SpelunkrTV`. Xcode needs a signed-in account with access to this team and permission to create provisioning profiles. If Apple reports **PLA Update available**, the team's Account Holder must accept the current Developer Program License Agreement on the Apple Developer website before provisioning can continue.
+The XcodeGen source and checked-in project select OnePatchDown, LLC (`THSJJN6KNN`) for automatic signing. The bundle identifier is `net.onepatchdown.spelunkrtv`. Xcode needs a signed-in account with access to this team and permission to create provisioning profiles. If Apple reports **PLA Update available**, the team's Account Holder must accept the current Developer Program License Agreement on the Apple Developer website before provisioning can continue.
+
+See the [App Store listing draft](docs/app-store/listing.md), [privacy policy](docs/PRIVACY.md), and [support page](docs/SUPPORT.md).
 
 On the Apple TV, open Settings → Remotes and Devices → Remote App and Devices. With the Mac on the same network, open Xcode's Devices and Simulators window, select the TV, click Pair, and enter the code shown on the television. Then select the TV as the project's run destination.
 
@@ -91,7 +93,7 @@ DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild \
 
 The UI tests require network access. Core tests use synthetic fixtures and no network by default. See [tasks/todo.md](tasks/todo.md) for the actual validation record and [docs/integration.md](docs/integration.md) for the public data contract, parity-test provenance, and presentation limits.
 
-On November 23, 2026, the signed Release archive built with Xcode 26.3 and the tvOS 26.2 SDK was installed and launched on an Apple TV (4th generation) running tvOS 26.6.1. The physical device loaded all 37 live channels, artwork, and current/upcoming programs. [Hardware screenshot](docs/screenshots/apple-tv-guide.png). Hardware playback and remote interaction remain to be exercised.
+On November 23, 2026, a development build using the original bundle identifier was installed and launched on an Apple TV (4th generation) running tvOS 26.6.1. The physical device loaded all 37 live channels, artwork, and current/upcoming programs. [Hardware screenshot](docs/screenshots/apple-tv-guide.png). Hardware playback and remote interaction remain to be exercised.
 
 ## Source and behavior
 

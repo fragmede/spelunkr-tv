@@ -473,7 +473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.fragmede.SpelunkrTV;
+				PRODUCT_BUNDLE_IDENTIFIER = net.onepatchdown.spelunkrtv;
 				PRODUCT_NAME = Spelunkr;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -512,7 +512,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.fragmede.SpelunkrTV;
+				PRODUCT_BUNDLE_IDENTIFIER = net.onepatchdown.spelunkrtv;
 				PRODUCT_NAME = Spelunkr;
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
