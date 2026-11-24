@@ -55,19 +55,13 @@ def stack(name, sizes):
         contents(image_path, images=images)
 
 
-def main():
-    contents(ROOT)
-    contents(BRAND, assets=[
-        {"filename": "App Icon.imagestack", "idiom": "tv", "role": "primary-app-icon", "size": "400x240"},
-        {"filename": "App Store Icon.imagestack", "idiom": "tv", "role": "primary-app-icon", "size": "1280x768"},
-        {"filename": "Top Shelf.imageset", "idiom": "tv", "role": "top-shelf-image", "size": "1920x720"},
-    ])
-    stack("App Icon.imagestack", [("1x", (400, 240)), ("2x", (800, 480))])
-    stack("App Store Icon.imagestack", [("1x", (1280, 768))])
-    top_shelf = BRAND / "Top Shelf.imageset"
+def shelf(name, width):
+    top_shelf = BRAND / name
+    top_shelf.mkdir(parents=True, exist_ok=True)
     images = []
-    for scale, size in [("1x", (1920, 720)), ("2x", (3840, 1440))]:
-        top_shelf.mkdir(parents=True, exist_ok=True)
+    for factor in (1, 2):
+        scale = f"{factor}x"
+        size = (width * factor, 720 * factor)
         result = artwork(size, "Back")
         for layer in ["Middle", "Front"]:
             result = Image.alpha_composite(result, artwork(size, layer))
@@ -75,6 +69,21 @@ def main():
         result.convert("RGB").save(top_shelf / filename)
         images.append({"filename": filename, "idiom": "tv", "scale": scale})
     contents(top_shelf, images=images)
+
+
+def main():
+    shelves = [("Top Shelf.imageset", "top-shelf-image", 1920),
+               ("Top Shelf Wide.imageset", "top-shelf-image-wide", 2320)]
+    contents(ROOT)
+    contents(BRAND, assets=[
+        {"filename": "App Icon.imagestack", "idiom": "tv", "role": "primary-app-icon", "size": "400x240"},
+        {"filename": "App Store Icon.imagestack", "idiom": "tv", "role": "primary-app-icon", "size": "1280x768"},
+        *({"filename": name, "idiom": "tv", "role": role, "size": f"{width}x720"} for name, role, width in shelves),
+    ])
+    stack("App Icon.imagestack", [("1x", (400, 240)), ("2x", (800, 480))])
+    stack("App Store Icon.imagestack", [("1x", (1280, 768))])
+    for name, _, width in shelves:
+        shelf(name, width)
 
 
 if __name__ == "__main__":

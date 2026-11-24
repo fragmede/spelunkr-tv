@@ -92,9 +92,9 @@ Prepare a free tvOS release under OnePatchDown, LLC with manual release after re
 - [x] Add an offline-readable privacy policy in the app and prepare matching privacy/support documents.
 - [x] Prepare listing text, a 1920 × 1080 guide screenshot, and review instructions.
 - [x] Register an explicit bundle identifier and provision it for App Store distribution under the company team.
-- [ ] Create the tvOS App Store Connect record under the company team.
+- [x] Create the tvOS App Store Connect record under the company team.
 - [x] Verify the privacy flow and export an App Store-signed build.
-- [ ] Upload the App Store-signed build once the app record exists.
+- [x] Upload the App Store-signed build and attach it to the draft version.
 - [ ] Complete the store listing, pricing, availability, review details, and manual-release setting.
 - [ ] Submit for review when required declarations are confirmed, or record the exact remaining inputs.
 - [x] Commit and push the preparation changes.
@@ -105,3 +105,10 @@ Preparation review:
 - Apple rejected `org.fragmede.SpelunkrTV` as unavailable to the company for explicit registration. Xcode registered `net.onepatchdown.spelunkrtv` and obtained a tvOS App Store profile for team `THSJJN6KNN`. The new identifier installs separately from the original development build.
 - Archived version 1.0.0, build 1 using Xcode 26.3 and the tvOS 26.2 SDK. The embedded privacy manifest validated. Xcode's first export hit a local rsync error copying symbols. Export with `uploadSymbols=false` succeeded. The resulting `build/Spelunkr-Store-export/Spelunkr.ipa` passed strict signature verification with the OnePatchDown Apple Distribution certificate and the exact App Store profile. The archive retains its local symbols.
 - App Store Connect requires a signed-in company session to create the app record. Content-rights and territory declarations, age rating, reviewer contact, and the App Store binary's distribution terms still need to be resolved before submission.
+
+November 24, 2026:
+
+- Created the OnePatchDown tvOS record as **Retro Broadcast Guide** after Apple reported that Spelunkr TV was already taken. Saved the description, subtitle, Entertainment category, guide screenshot, support URL, review instructions, privacy policy URL and tvOS policy text, free pricing, and manual release.
+- Apple rejected build 1 because it lacked the wide Top Shelf image. Added the 2320 × 720 and 4640 × 1440 variants through the existing asset generator and verified that Xcode emitted `TVTopShelfImage.TVTopShelfPrimaryImageWide`.
+- App Store Connect accepted version 1.0.0 build 2 and the build was attached to the draft. Apple noted that the tvOS 27 SDK requirement begins in April 2027. The current build remains eligible for review.
+- The app remains in Prepare for Submission. Content rights, territories, privacy answers, age rating, review contact, and binary distribution terms still need to be confirmed.

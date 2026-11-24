@@ -2,7 +2,7 @@
 
 - Provider: OnePatchDown, LLC
 - Platform: tvOS
-- Name: Spelunkr TV (subject to availability)
+- Draft store name: Retro Broadcast Guide
 - Subtitle: A guide to retro broadcasts
 - Language: English (U.S.)
 - Bundle ID: net.onepatchdown.spelunkrtv
@@ -16,7 +16,7 @@
 
 ## Description
 
-Tune in to retro programming with Spelunkr TV, an unofficial Apple TV client for spelunkr.tv. Browse a live channel guide, see what's on now and next, and join a program in progress. Use your Siri Remote to search the guide, save favorite channels, and switch channels from the player.
+Tune in to retro programming with Retro Broadcast Guide, an unofficial Apple TV client for spelunkr.tv. Browse a live channel guide, see what's on now and next, and join a program in progress. Use your Siri Remote to search the guide, save favorite channels, and switch channels from the player.
 
 Spelunkr curates the programming and publishes the schedule. Recordings stream from the Internet Archive. An internet connection is required. No account is needed.
 
