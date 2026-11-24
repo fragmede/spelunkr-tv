@@ -93,14 +93,15 @@ Prepare a free tvOS release under OnePatchDown, LLC with manual release after re
 - [x] Prepare listing text, a 1920 × 1080 guide screenshot, and review instructions.
 - [x] Register an explicit bundle identifier and provision it for App Store distribution under the company team.
 - [ ] Create the tvOS App Store Connect record under the company team.
-- [ ] Verify the privacy flow and release build, then archive and upload a new build.
+- [x] Verify the privacy flow and export an App Store-signed build.
+- [ ] Upload the App Store-signed build once the app record exists.
 - [ ] Complete the store listing, pricing, availability, review details, and manual-release setting.
 - [ ] Submit for review when required declarations are confirmed, or record the exact remaining inputs.
-- [ ] Commit and push implementation and verified submission results.
+- [x] Commit and push the preparation changes.
 
 Preparation review:
 
 - The guide's About sheet opens an offline privacy policy. Simulator tests passed for that flow, search navigation, and favorite persistence. The public privacy and support documents accompany the listing draft.
 - Apple rejected `org.fragmede.SpelunkrTV` as unavailable to the company for explicit registration. Xcode registered `net.onepatchdown.spelunkrtv` and obtained a tvOS App Store profile for team `THSJJN6KNN`. The new identifier installs separately from the original development build.
-- Archived version 1.0.0, build 1 using Xcode 26.3 and the tvOS 26.2 SDK. The archive's development signature and embedded privacy manifest validated. App Store export is waiting for macOS to authorize access to the Apple Distribution key.
+- Archived version 1.0.0, build 1 using Xcode 26.3 and the tvOS 26.2 SDK. The embedded privacy manifest validated. Xcode's first export hit a local rsync error copying symbols. Export with `uploadSymbols=false` succeeded. The resulting `build/Spelunkr-Store-export/Spelunkr.ipa` passed strict signature verification with the OnePatchDown Apple Distribution certificate and the exact App Store profile. The archive retains its local symbols.
 - App Store Connect requires a signed-in company session to create the app record. Content-rights and territory declarations, age rating, reviewer contact, and the App Store binary's distribution terms still need to be resolved before submission.
